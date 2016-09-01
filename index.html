@@ -3,11 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>TC's Resume</title>
+  <style>
+    /* Prevents slides from flashing */
+    #slides {
+      display:none;
+    }
+
+  </style>
   <link href="css/font-awesome.css" rel="stylesheet">
   <link href="./main.css" rel="stylesheet">
+  <script src="./jquery-1.7.1.min.js"></script>
+  <script src="./Slides-SlidesJS-3/source/jquery.slides.js"></script>
+  <script src="./main.js"></script>
+  
 </head>
 
 <body>
+  
+
+
 
   <header>
 
@@ -183,6 +197,16 @@
       </div>
     </section>
 
+    <div class="container">
+      <div id="slides">
+        <p class="evaluate">“ Great designer! I like his sense of design, especially the color scheme. Quick turnaround. Look forward to work with him again. Thanks!”</p>
+        <p class="evaluate">“ Reza did a phenominal job setting up my a website for my product He performed the task very quickly and efficiently. We know we have the superior topical pain relief cream on the market and he has helped us communicate that message via the website he built from scratch. Thanks! ”</p>
+        <p class="evaluate">“ Another successful project working with Reza. He has great design skills, is very responsive and professional. Looking forward to the next opportunity to work together. ”</p>      
+      </div>
+    </div>
+
+
+
     <section id="testimonial">
       <div id="testimonial-container">
         <p>“ Great designer! I like his sense of design, especially the color scheme. Quick turnaround. Look forward to work with him again. Thanks!! ”</p>
@@ -198,24 +222,20 @@
       </div>
       <div id="contact-info">
         <div>
-          <p>Name</p>
+          <p>Name：<span>TaoChen</span></p>
           <hr>
-          <p>TaoChen</p>
         </div>
         <div>
-          <p>Email</p>
+          <p>Email：<a href="mailto:taochen1992@gmail.com">taochen1992@gmail.com</a></p>
           <hr>
-          <a href="mailto:taochen1992@gmail.com">taochen1992@gmail.com</a>
           </div>
         <div>
-          <p>Github</p>
-          <hr>
-          <a href="http://www.github.com/chentao92">www.github.com/chentao92</a>
+          <p>Github：<a href="https://www.github.com/chentao92">https://github.com/chentao92</a></p>
+          <hr> 
         </div>
         <div>
-          <p>Phone</p>
+          <p>Phone：<span>18297736360</span></p>
           <hr>
-          <p>18297736360</p>
         </div>
       </div>
     </section>
@@ -223,9 +243,8 @@
   </main>
 
   <footer>
-    <div>
-      <img src="./pictures/logo-footer.png" alt="">
-    </div>
+    <img src="./pictures/logo-footer.png" alt="">
+    <p>联系：18297736360</p>
   </footer>
 
 </body>

@@ -395,6 +395,30 @@ header {
   line-height: 1.6rem;
 }
 
+
+
+.container {
+  background: url(./pictures/testimonial-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.evaluate {
+  padding-top: 20%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  color: #FFF;
+  line-height: 2.5rem;
+  margin: 0;
+}
+
+
+
+
+
+
 #testimonial {
   background: url(./pictures/testimonial-bg.jpg);
   height: 100vh;
@@ -462,8 +486,19 @@ footer {
   background: #2f2f2f;
 }
 
-footer > div {
-  display: flex;
-  justify-content: center;
-  padding: 80px;
+footer > img {
+  display: block;
+  margin: auto;
+  padding: 60px 0 30px 0;
 }
+
+footer > p {
+  font-size: 20px;
+  color: #FFF;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+
+
