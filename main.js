@@ -8,7 +8,7 @@ $(function(){
         // You cannot use your own buttons. Sorry.
       effect: "slide",
         // [string] Can be either "slide" or "fade".
-      nterval: 1000,
+      interval: 2000,
         // [number] Time spent on each slide in milliseconds.
       auto: true,
         // [boolean] Start playing the slideshow on load.
@@ -31,3 +31,4 @@ $(function(){
     }
   });
 });
+

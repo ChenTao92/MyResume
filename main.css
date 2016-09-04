@@ -45,6 +45,11 @@ header {
   color: gray;
 }
 
+main {
+  max-width: 1366px;
+  margin: auto;
+}
+
 #design {
   display: flex;
   justify-content: space-between;
@@ -52,6 +57,7 @@ header {
 
 #favicon > img {
   width: 50vw;
+  max-width: 683px;
 }
 
 #design > div:nth-child(2) {
@@ -263,61 +269,76 @@ header {
 }
 
 #skills-list > div {
-  padding:20px;
+  padding:10px;
 }
 
 #skills-list > div > p {
   font-weight: 900;
+  padding-left: 8px;
 }
 
-#skills-list > div:nth-child(1) > hr {
-  border-color: rgb(224,224,224);
-  border-width: 3px;
-  max-width: 75%;
-  margin: 0;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
+.count-bar {
+  background-color: #f6f6f6;
+  padding: 3px;
 }
 
-#skills-list > div:nth-child(2) > hr {
-  border-color: rgb(224,224,224);
-  border-width: 3px;
-  max-width: 91%;
-  margin: 0;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
+#count1 {
+  background-color: #818181;
+  width: 78%;
+  height: 5px;
+  position: relative;
 }
 
-#skills-list > div:nth-child(3) > hr {
-  border-color: rgb(224,224,224);
-  border-width: 3px;
-  max-width: 58%;
-  margin: 0;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
+#count2 {
+  background-color: #818181;
+  width: 91%;
+  height: 5px;
+  position: relative;
 }
 
-#skills-list > div:nth-child(4) > hr {
-  border-color: rgb(224,224,224);
-  border-width: 3px;
-  max-width: 63%;
-  margin: 0;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
+#count3 {
+  background-color: #818181;
+  width: 63%;
+  height: 5px;
+  position: relative;
 }
 
-#skills-list > div:nth-child(5) > hr {
-  border-color: rgb(224,224,224);
-  border-width: 3px;
-  max-width: 82%;
-  margin: 0;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
+#count4 {
+  background-color: #818181;
+  width: 75%;
+  height: 5px;
+  position: relative;
+}
+
+#count5 {
+  background-color: #818181;
+  width: 86%;
+  height: 5px;
+  position: relative;
+}
+
+.count-bar > div >span {
+  background-color: #818181;
+  position: absolute;
+  line-height: 18px;
+  top: -28px;
+  right: -20px;
+  width: 40px;
+  height: 18px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.count-bar > div >span:after {
+  border-top: 4px solid #818181;
+  position: absolute;
+  left: 50%;
+  margin-left: -4px;
+  top: 18px;
+  content: "";
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
 }
 
 #education {
@@ -395,12 +416,15 @@ header {
   line-height: 1.6rem;
 }
 
-
-
-.container {
+#testimonial {
   background: url(./pictures/testimonial-bg.jpg);
   height: 100vh;
   background-size: cover;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
 }
 
 .evaluate {
@@ -414,35 +438,38 @@ header {
   margin: 0;
 }
 
-
-
-
-
-
-#testimonial {
-  background: url(./pictures/testimonial-bg.jpg);
-  height: 100vh;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.evaluate > span {
+  display: block;
+  padding-top: 25px;
+  font-size: 20px;
+  color: #B7B7B7;
 }
 
-#testimonial-container {
-  width: 75%;
+.slidesjs-slide {
+  width: 960px !important;
+  margin-left: 160px;
 }
 
-#testimonial-container > p {
-  text-align: center;
-  font-family: 'Roboto Slab', serif;
-  font-size: 22px;
-  color: #FFF;
-  line-height: 2.5rem;
-  margin: 0;
+#slides {
+  position: relative;
 }
 
-#testimonial-container > p:nth-child(2) {
-  margin-top: 30px;
+.slidesjs-pagination {
+  position: absolute;
+  bottom: 250px; 
+  left: 47%;
+  margin: 6px 0 0;
+  list-style: disc;
+  font-size: 30px;
+  color: white;
+}
+
+.slidesjs-pagination-item {
+  float: left;
+}
+
+.slidesjs-pagination-item > a {
+  opacity:0;
 }
 
 #contact {
@@ -480,6 +507,20 @@ header {
 
 #contact-info > div {
   padding:20px;
+}
+
+#contact-info > div > p {
+  padding-left: 5px;
+  font-size: 1.17em;
+  font-weight: 800;
+}
+#contact-info > div > hr {
+  border-color: rgb(224,224,224);
+  border-width: 3px;
+  margin: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
 }
 
 footer {
