@@ -55,7 +55,7 @@ main {
   justify-content: space-between;
 }
 
-#favicon > img {
+#headpic > img {
   width: 50vw;
   max-width: 683px;
 }
@@ -102,7 +102,7 @@ main {
 }
 
 #work-img {
-  width: 67%;/*为何删掉此行则左侧div占父元素比例将失调*/
+  width: 67%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;/*因为flex默认会把子元素纵向拉伸，只有这样才不会导致图片变形*/
@@ -154,7 +154,6 @@ main {
 
 #services-list > div > .fa {
   font-size: 25px;
-  color: #F05F40;
 }
 
 #services-list > div > p {
@@ -523,11 +522,21 @@ main {
   border-right-width: 0;
 }
 
+#contact-info a {
+  color: #000;
+  text-decoration: none;
+}
+
+#contact-info a:hover {
+  text-decoration: underline;
+}
+
 footer {
   background: #2f2f2f;
 }
 
 footer > img {
+  width: 100px;
   display: block;
   margin: auto;
   padding: 60px 0 30px 0;
