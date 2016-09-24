@@ -1,5 +1,5 @@
 $(function(){
-  $("#slides").slidesjs({
+  $("#slider").slidesjs({
     width: 1200,
     height: 800,
     play: {

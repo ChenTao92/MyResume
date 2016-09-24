@@ -5,6 +5,8 @@ body {
   margin: 0;
 }
 
+
+/*header*/
 header {
   background-image: url(../pictures/headbackground.jpg);
   height: 100vh;
@@ -17,8 +19,8 @@ header {
 }
 
 #header-border {
-  width: 230px;
-  height: 190px;
+  width: 290px;
+  height: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,21 +29,21 @@ header {
 
 #header-container {
   background-color: #FFF;
-  width: 220px;
-  height: 180px;
+  width: 280px;
+  height: 250px;
   opacity:0.9;
 }
 
 
 #header-container > h3 {
-  padding-top: 30px;
+  padding-top: 55px;
   text-align: center;
-  font-size: 27px;
+  font-size: 29px;
 }
 
 #header-container > p {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: gray;
 }
 
@@ -50,75 +52,59 @@ main {
   margin: auto;
 }
 
+/*about*/
 #about {
- /* display: flex;
-  justify-content: space-between;*/
+  display: flex;
+  justify-content: space-between;
 }
 
-#headpic > img {
-  
-  max-width: 683px;
-}
-
-#headpic {
+#about-canvas {
   width: 50vw;
-  background: #000;
-  overflow: hidden;
-}
-
-canvas {
-  display: block; 
-  /*left: 50%;*/
-  /*margin: -200px 0 0 -200px;*/
-  position: relative;
-  /*top: 50%;*/
-}
-
-
-
-
-
-#about > div:nth-child(2) {
+  background-color:black;  
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#introduction {
+  width: 50vw;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
 
-
-
-
-#about > div:nth-child(2) > h2 {
+#intro-container > h2 {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
 }
 
-#about > div:nth-child(2) > hr {
+#intro-container > h2:hover {
+  text-shadow: 2px 2px 2px gray;
+  cursor: pointer;
+}
+
+#intro-container > hr {
   border-color: rgb(224,224,224);
   border-width: 3px;
-  max-width: 20px;
+  max-width: 23px;
   margin: 0;
   border-bottom-width: 0;
   border-left-width: 0;
   border-right-width: 0;
 }
 
+#intro-container > ul > li {
+  line-height: 1.5;
+  font-size: 18px;
+}
 
-
-
-
-
-
-
-
-
-
-
+/*services*/
 #services {
   padding: 100px;
   display: flex;
   justify-content: space-between;
+  background-color: #f6f6f6;
 }
 
 #services-summary {
@@ -131,6 +117,11 @@ canvas {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+}
+
+#services-summary > h2:hover {
+  text-shadow: 2px 2px 2px gray;
+  cursor: pointer;
 }
 
 #services-summary > hr {
@@ -163,6 +154,7 @@ canvas {
   line-height: 1.5rem;
 }
 
+/*skills*/
 #skills {
   padding: 100px;
   display: flex;
@@ -179,6 +171,11 @@ canvas {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+}
+
+#skills-summary > h2:hover {
+  text-shadow: 2px 2px 2px gray;
+  cursor: pointer;
 }
 
 #skills-summary > hr {
@@ -211,35 +208,35 @@ canvas {
 
 #count1 {
   background-color: #818181;
-  width: 78%;
+  width: 80%;
   height: 5px;
   position: relative;
 }
 
 #count2 {
   background-color: #818181;
-  width: 91%;
+  width: 90%;
   height: 5px;
   position: relative;
 }
 
 #count3 {
   background-color: #818181;
-  width: 63%;
+  width: 70%;
   height: 5px;
   position: relative;
 }
 
 #count4 {
   background-color: #818181;
-  width: 75%;
+  width: 80%;
   height: 5px;
   position: relative;
 }
 
 #count5 {
   background-color: #818181;
-  width: 86%;
+  width: 75%;
   height: 5px;
   position: relative;
 }
@@ -268,6 +265,7 @@ canvas {
   border-right: 4px solid transparent;
 }
 
+/*employement*/
 #employement {
   padding: 100px;
   display: flex;
@@ -285,6 +283,11 @@ canvas {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+}
+
+#employement-summary > h2:hover {
+  text-shadow: 2px 2px 2px gray;
+  cursor: pointer;
 }
 
 #employement-summary > hr {
@@ -353,6 +356,7 @@ canvas {
 }
 
 
+/*portfolio*/
 #portfolio {
   background-color: rgb(239,239,239);
   padding: 150px;
@@ -370,6 +374,11 @@ canvas {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+}
+
+#portfolio-summary > h2:hover {
+  text-shadow: 2px 2px 2px gray;
+  cursor: pointer;
 }
 
 #portfolio-summary > hr {
@@ -421,10 +430,12 @@ canvas {
   transform: scale(1.05);
 }
 
-#slidesJS {
+/*SliderJS*/
+#sliderJS {
   background: url(../pictures/slidesJS-bg.jpg);
   height: 100vh;
   background-size: cover;
+  max-height: 850px;
 }
 
 .container {
@@ -455,18 +466,19 @@ canvas {
   margin-left: 160px;
 }
 
-#slides {
+#slider {
   position: relative;
 }
 
 .slidesjs-pagination {
   position: absolute;
-  bottom: 250px; 
+  bottom: 0; 
   left: 47%;
   margin: 6px 0 0;
   list-style: disc;
   font-size: 30px;
-  color: white;
+  /*color: white;*/
+  color: red;
 }
 
 .slidesjs-pagination-item {
@@ -477,6 +489,12 @@ canvas {
   opacity:0;
 }
 
+.slidesjs-control, .slidesjs-container {
+  height: 550px !important;
+}
+
+
+/*contact*/
 #contact {
   padding: 100px;
   display: flex;
@@ -494,6 +512,11 @@ canvas {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+}
+
+#contact-summary > h2:hover {
+  text-shadow: 2px 2px 2px gray;
+  cursor: pointer;
 }
 
 #contact-summary > hr {
@@ -535,8 +558,10 @@ canvas {
 
 #contact-info a:hover {
   text-decoration: underline;
+  color: #06e;
 }
 
+/*footer*/
 footer {
   background: #2f2f2f;
 }

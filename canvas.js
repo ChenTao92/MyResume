@@ -186,13 +186,15 @@ var setupRAF = function(){
 /*=============================================================================*/ 
 /* Define Canvas and Initialize
 /*=============================================================================*/
+  var about_canvas = document.getElementById("about-canvas")
+  
   if(isCanvasSupported){
     var c = document.createElement('canvas');
-    c.width = 400;
-    c.height = 400;     
+    c.width = 500;
+    c.height = 500;     
     var cw = c.width;
-    var ch = c.height;  
-    document.body.appendChild(c); 
+    var ch = c.height;
+    about_canvas.appendChild(c)
     var cl = new smoothTrail(c, cw, ch);        
     
     setupRAF();
