@@ -477,8 +477,7 @@ main {
   margin: 6px 0 0;
   list-style: disc;
   font-size: 30px;
-  /*color: white;*/
-  color: red;
+  color: white;
 }
 
 .slidesjs-pagination-item {
