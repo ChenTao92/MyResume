@@ -48,8 +48,8 @@ header {
 }
 
 main {
-  max-width: 1366px;
-  margin: auto;
+/*  max-width: 1366px;
+  margin: auto;*/
 }
 
 /*about*/
@@ -74,6 +74,7 @@ main {
 }
 
 #intro-container > h2 {
+  display: inline-block;
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
@@ -101,19 +102,25 @@ main {
 
 /*services*/
 #services {
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
   background-color: #f6f6f6;
 }
 
+#services-container {
+  max-width: 1366px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between; 
+}
+
 #services-summary {
-  width: 25%;
-  padding: 0 70px 0 0; 
+  width: 35%;
   line-height: 1.9rem;
 }
 
 #services-summary > h2 {
+  display: inline-block;
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
@@ -135,7 +142,7 @@ main {
 }
 
 #services-list {
-  width: 75%;
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -143,7 +150,6 @@ main {
 #services-list > div {
   width: 33.3%;
   box-sizing: border-box;
-  padding: 20px;
 }
 
 #services-list > div > .fa {
@@ -154,20 +160,24 @@ main {
   line-height: 1.5rem;
 }
 
+
 /*skills*/
-#skills {
+#skills-container {
+  max-width: 1366px;
+  margin: auto;
+  box-sizing: border-box;
   padding: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 #skills-summary {
-  width: 33%;
-  padding: 0 70px 0 0; 
+  width: 35%;
   line-height: 1.9rem;
 }
 
 #skills-summary > h2 {
+  display: inline-block;
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
@@ -189,7 +199,7 @@ main {
 }
 
 #skills-list {
-  width: 67%;
+  width: 65%;
 }
 
 #skills-list > div {
@@ -267,19 +277,26 @@ main {
 
 /*employement*/
 #employement {
+  background-color: #f6f6f6;
+}
+
+#employement-container {
+  max-width: 1366px;
+  margin: auto;
+  box-sizing: border-box;
   padding: 100px;
   display: flex;
   justify-content: space-between;
-  background-color: #f6f6f6;
 }
 
 #employement-summary {
   width: 30%;
-  padding: 0 70px 0 0; 
+  /*padding: 0 70px 0 0; */
   line-height: 1.9rem;
 }
 
 #employement-summary > h2 {
+  display: inline-block;
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
@@ -328,7 +345,7 @@ main {
   margin: 0 25px;
   padding: 5px;
   text-align: center;
-  border: 2px solid #f6f6f6;
+  border: 1px solid #929292;
   border-radius: 5px;
   font-family: "Fira Sans",sans-serif;
 }
@@ -337,8 +354,8 @@ main {
   border: 0;
   height: 1px;
   margin: 16px 0;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  opacity: 0.15;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #929292, #f0f0f0);
+  opacity: 0.55;
 }
 
 #employement-experience > div > p:nth-child(5) {
@@ -359,7 +376,13 @@ main {
 /*portfolio*/
 #portfolio {
   background-color: rgb(239,239,239);
-  padding: 150px;
+}
+
+#portfolio-container {
+  max-width: 1366px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -495,15 +518,20 @@ main {
 
 /*contact*/
 #contact {
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
   background-color: #f6f6f6;
 }
 
+#contact-container {
+  max-width: 1366px;
+  margin: auto;
+  box-sizing:border-box;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
 #contact-summary {
-  width: 30%;
-  padding: 0 70px 0 0; 
+  width: 40%;
   line-height: 1.9rem;
 }
 
@@ -529,7 +557,7 @@ main {
 }
 
 #contact-info {
-  width: 70%;
+  width: 60%;
 }
 
 #contact-info > div {
