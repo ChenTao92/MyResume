@@ -78,6 +78,7 @@ main {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+  transition: text-shadow 1s linear;
 }
 
 #intro-container > h2:hover {
@@ -124,6 +125,7 @@ main {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+  transition: text-shadow 1s linear;
 }
 
 #services-summary > h2:hover {
@@ -181,6 +183,7 @@ main {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+  transition: text-shadow 1s linear;
 }
 
 #skills-summary > h2:hover {
@@ -300,6 +303,7 @@ main {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+  transition: text-shadow 1s linear;
 }
 
 #employement-summary > h2:hover {
@@ -397,11 +401,12 @@ main {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+  transition: text-shadow 1s linear;
 }
 
 #portfolio-summary > h2:hover {
-  text-shadow: 2px 2px 2px gray;
   cursor: pointer;
+  text-shadow: 2px 2px 2px gray;
 }
 
 #portfolio-summary > hr {
@@ -414,16 +419,26 @@ main {
   border-right-width: 0;
 }
 
+#portfolio-summary > ul > li > a {
+  color: #000;
+  text-decoration: none;
+}
+
 #portfolio-img {
   font-size: 0;
   width: 73%;
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
-  align-items: center;/*因为flex默认会把子元素纵向拉伸，只有这样才不会导致图片变形*/
+  align-items: cente*/r;/*因为flex默认会把子元素纵向拉伸，只有这样才不会导致图片变形*/
 }
 
 #portfolio-img > div {
+  display: inline-block;
   width:50%;
+}
+
+#portfolio-img > div:hover {
+  z-index: 10000;
 }
 
 #portfolio-img > div > a > img {
@@ -539,6 +554,7 @@ main {
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
+  transition: text-shadow 1s linear;
 }
 
 #contact-summary > h2:hover {
